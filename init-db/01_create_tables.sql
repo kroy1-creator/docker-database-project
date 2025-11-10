@@ -39,11 +39,6 @@ CONSTRAINT submitlog_PK PRIMARY KEY (sd_id),
 CONSTRAINT loginsign_FK FOREIGN KEY (ls_id_FK) REFERENCES loginsign (ls_id),
 CONSTRAINT submitlog_FK FOREIGN KEY (sl_id_FK) REFERENCES submitlog (sl_id));
 
--- INSERT VALUES
-INSERT INTO searchdisplay (sd_id, sl_id_FK, ls_id_FK, keyword) VALUES
-(1, 2, 1, 'credit card'),
-(2, 1, 3, 'social security card'),
-(3, 3, 2, 'house keys');
 ---------------------------------------------------------------------------------------
 
 /* Subscription Table */
